@@ -27,6 +27,8 @@
     -Color -string
     -Size  -string
 
+**_M O R E P S E U D O C O D E_**
+
 \*ALGO && \*CODE
 
 Above Main & Under Class Program
@@ -34,28 +36,29 @@ Above Main & Under Class Program
 > Static void PETS
 > class PET
 > {
-> //INFO FROM \*DATA
-> var currentPets = new List<string>(CURRENT PETS)
+
+      TO CREATE LIST AND  ATTRIBUTES/PROPERTIES
+      var currentPets = new List<PET>()
 
 > {
+> //INFO FROM \*DATA
+> public string Species { get ; set } -string
+> public string DietType { get ; set } -string //FOR JURASSIC HW
+> public string Gender { get ; set } -string
+> public int Age { get ; set } -int
+> public string Name { get ; set } -string
+> public string Color { get ; set } -string
+> public int/string? Size { get ; set }
+> } >
 
-       newList<string>("Properties")
-    > public string Species { get ; set } -string
-    > public string DietType { get ; set } -string //FOR JURASSIC HW
-    > public string Gender { get ; set } -string
-    > public int Age { get ; set } -int
-    > public string Name { get ; set } -string
-    > public string Color { get ; set } -string
-    > public int/string? Size { get ; set }
-
-} > {
+    {
 
 > Switch (Select.Age)
 > {
 > case " "
 > break;
 > }
-> return int.Parse(Age)
+> return int.Parse(Age) maybe _int.TRYPARSE?_
 > }
 > var PET = new PET()
 > {
@@ -66,15 +69,15 @@ Above Main & Under Class Program
 > Color =
 > etc =
 
-    }
+      }
 
 }
 
-Static void SummaryofcurrentPETS{DietType(property in PET<class>)}
+> Static void SummaryofcurrentPETS{DietType(property in PET<class>)} -- FOR DINO HW
 
-Static void IntroMessage(string welcome message)
-Console.Clear();
+> Static void IntroMessage(string welcome message)
 
+    Console.Clear();
     Console.WriteLine("\n Welcome to Luke's Pet Adoption Agency\n")
     ConsoleWriteLine("\n Nice to see you! Let me summon my trusty guide Terence to help you today! - LUKEF$AFLYakaCEOofPETADOPTIONAGENCY\n")
 
@@ -96,8 +99,8 @@ var choice = Console.ReadLine().ToUpper().Trim();
 > {
 
     userHasChosenToQuit = true;
+    > *EXIT PROGRAM LOOP*
 
-}
 }
 
 Static void User&PETinterface(string |)
@@ -107,26 +110,57 @@ C R E A T E - MENU (class)
 Console.WriteLine("\n First lets get your first name or favorite alias\n")
 Console.ReadLine();
 Console.WriteLine($"\n Welcome! {alias})
-Console.WriteLine($\What would you like to do {alias})
-\*FEATURES (MENU PROPERTIES)
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine("SEE -View our Pets");
+
+    Console.WriteLine($\What would you like to do {alias})
+
+    \*FEATURES (MENU PROPERTIES)
+    Console.WriteLine("UPDATE");
+    Console.WriteLine("ADOPT");
+    Console.WriteLine("Put up for adoption(some of ADD)");
+    Console.WriteLine("SEE -View our Pets");
 
     if (choice == "SEE")
     {
       foreach (var pet in Pets)
       {
-        Console.WriteLine(CURRENT-PET (class) OR EACH ATTRIBUTE OF )
+        Console.WriteLine(CURRENT-PET(class) OR EACH ATTRIBUTE OF )
       }
 
     }
 
-    Create Method for new property {Name} for PET(class)
-       -Ask for PET "Name"
-       -ReadLine();
-       -Console.WriteLine("\n Awesome to meet you {PetName})
-       -Add new PET {"Name"}
+    if (choice == "Adopt")
+    {
+      //possibly Create Method for new property {Name}           for           PET     (class)
+      *if asking for specific pet in list
+        Create Boolean IF LOOP if name == "XXXTentacion"
+          -Ask for PET "Name"
+          Console.Write("\n Hi what is your name?\n")
+          var newPet name = Console.ReadLine();
+          -Console.WriteLine("\n Awesome to meet you {PetName})
+      *if asking for specific pet in list to adopt
+            var foundpet = pets.Find(pet => pet.Name == nameOfPet)            |
+                                  |
+                              in List
+              pets.Remove(foundPet);
+    //Ask for attributes
+          -Console.WriteLine();
+          -Console.WriteLine();
+          -Console.WriteLine();
+    ///
+          -Add new PET {"Name"} to list of currentPETS (class)
+          var newPet = new Pet()
+          {
+            Name = {name}
+            Gender = {Gender}
+          }
+          pets.Add(newPet);
+        }
+    if (choice == "Update")
+      Console.WriteLine("What is the Name of the pet");
+      var newPet = new Pet()
 
--Ask for
+      Console.WriteLine(Whatever it is we are updating)
+      ReadLine -> var new size
+      Update found pets size
+
+}
